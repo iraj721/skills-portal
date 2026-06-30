@@ -489,12 +489,4 @@ This project is proprietary software developed for Pakistan Naujawan Party (PNP)
 
 ---
 
-## Support
-
-For support, email: support@naujawanskills.pk
-
-Or contact the Tech Lead: Gul
-
----
-
 **Built with passion for Pakistan's youth development.**
