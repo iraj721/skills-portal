@@ -4,6 +4,7 @@ import { courses, modules, lessons, enrollments } from "../../../../db/schema"
 import { eq, sql } from "drizzle-orm"
 import { verifyToken } from "../../../../lib/auth"
 import { z } from "zod"
+export const dynamic = "force-dynamic"
 
 const courseSchema = z.object({
   title: z.string().min(3, "Title must be at least 3 characters"),

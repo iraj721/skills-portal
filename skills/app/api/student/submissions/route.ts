@@ -4,6 +4,7 @@ import { submissions, assignments, enrollments } from "../../../../db/schema"
 import { eq, and } from "drizzle-orm"
 import { verifyToken } from "../../../../lib/auth"
 import { z } from "zod"
+export const dynamic = "force-dynamic"
 
 const submissionSchema = z.object({
   assignmentId: z.string().uuid("Invalid assignment ID"),

@@ -4,6 +4,7 @@ import { instructorProfiles, users } from "../../../../db/schema"
 import { eq } from "drizzle-orm"
 import { verifyToken } from "../../../../lib/auth"
 import { hashPassword } from "../../../../lib/auth"
+export const dynamic = "force-dynamic"
 
 // GET - Fetch all instructors
 export async function GET(request: NextRequest) {

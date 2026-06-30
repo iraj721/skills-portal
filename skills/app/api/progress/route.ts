@@ -4,6 +4,7 @@ import { progress, enrollments, lessons, modules } from "../../../db/schema"
 import { eq, and, sql } from "drizzle-orm"
 import { verifyToken } from "../../../lib/auth"
 import { z } from "zod"
+export const dynamic = "force-dynamic"
 
 const progressSchema = z.object({
   lessonId: z.string().uuid("Invalid lesson ID"),

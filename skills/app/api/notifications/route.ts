@@ -4,6 +4,7 @@ import { notifications, users } from "../../../db/schema"
 import { eq, and, desc } from "drizzle-orm"
 import { verifyToken } from "../../../lib/auth"
 import { z } from "zod"
+export const dynamic = "force-dynamic"
 
 const notificationSchema = z.object({
   title: z.string().min(1),

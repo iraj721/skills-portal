@@ -4,6 +4,7 @@ import { users, instructorProfiles } from "../../../../db/schema"
 import { eq } from "drizzle-orm"
 import { verifyToken } from "../../../../lib/auth"
 import { z } from "zod"
+export const dynamic = "force-dynamic"
 
 const profileSchema = z.object({
   expertise: z.array(z.string()).default([]),

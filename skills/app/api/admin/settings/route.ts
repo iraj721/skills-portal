@@ -4,6 +4,7 @@ import { users, settings } from "../../../../db/schema"
 import { eq } from "drizzle-orm"
 import { verifyToken } from "../../../../lib/auth"
 import { z } from "zod"
+export const dynamic = "force-dynamic"
 
 const settingsSchema = z.object({
   siteName: z.string().min(1),

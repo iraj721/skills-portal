@@ -4,6 +4,7 @@ import { quizAttempts, quizzes, quizQuestions, enrollments, weeklyUnlocks, atten
 import { eq, and } from "drizzle-orm"
 import { verifyToken } from "../../../../lib/auth"
 import { z } from "zod"
+export const dynamic = "force-dynamic"
 
 const attemptSchema = z.object({
   quizId: z.string().uuid("Invalid quiz ID"),

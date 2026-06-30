@@ -4,6 +4,7 @@ import { submissions, assignments } from "../../../../../../db/schema"
 import { eq } from "drizzle-orm"
 import { verifyToken } from "../../../../../../lib/auth"
 import { z } from "zod"
+export const dynamic = "force-dynamic"
 
 const gradeSchema = z.object({
   marksObtained: z.number().min(0),

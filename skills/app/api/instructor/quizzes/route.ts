@@ -4,6 +4,7 @@ import { quizzes, quizQuestions, courses } from "../../../../db/schema"
 import { eq, and, desc, inArray } from "drizzle-orm"
 import { verifyToken } from "../../../../lib/auth"
 import { z } from "zod"
+export const dynamic = "force-dynamic"
 
 const questionSchema = z.object({
   question: z.string().min(1, "Question is required"),

@@ -3,6 +3,7 @@ import { db } from "../../../../db"
 import { enrollments, courses, progress, certificates, assignments, submissions, quizzes, quizAttempts, lessons, modules } from "../../../../db/schema"
 import { eq, and, sql, count } from "drizzle-orm"
 import { verifyToken } from "../../../../lib/auth"
+export const dynamic = "force-dynamic"
 
 export async function GET(request: NextRequest) {
   try {

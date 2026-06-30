@@ -4,6 +4,7 @@ import { batches, batchCourses, courses, categories } from "../../../db/schema"
 import { eq, and, sql, desc } from "drizzle-orm"
 import { verifyToken } from "../../../lib/auth"
 import { z } from "zod"
+export const dynamic = "force-dynamic"
 
 const batchSchema = z.object({
   name: z.string().min(1, "Name is required"),

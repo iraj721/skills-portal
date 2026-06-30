@@ -3,6 +3,7 @@ import { db } from "../../../../db"
 import { submissions, assignments, courses } from "../../../../db/schema"
 import { eq, sql } from "drizzle-orm"
 import { verifyToken } from "../../../../lib/auth"
+export const dynamic = "force-dynamic"
 
 // GET - Instructor views all submissions for their courses
 export async function GET(request: NextRequest) {

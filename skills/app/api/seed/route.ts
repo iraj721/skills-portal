@@ -3,6 +3,7 @@ import { db } from "../../../db"
 import { categories, users, courses, modules, lessons } from "../../../db/schema"
 import { eq } from "drizzle-orm"  // FIXED: eq add kiya
 import { hashPassword } from "../../../lib/auth"
+export const dynamic = "force-dynamic"
 
 // This is a development-only endpoint to seed initial data
 export async function POST(request: NextRequest) {

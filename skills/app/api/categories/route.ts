@@ -4,6 +4,7 @@ import { categories } from "../../../db/schema"
 import { eq, sql } from "drizzle-orm"
 import { verifyToken } from "../../../lib/auth"
 import { z } from "zod"
+export const dynamic = "force-dynamic"
 
 const categorySchema = z.object({
   name: z.string().min(1, "Name is required"),

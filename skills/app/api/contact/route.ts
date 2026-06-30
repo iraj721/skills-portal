@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import { z } from "zod"
 import { rateLimit } from "../../../lib/rate-limit"
+export const dynamic = "force-dynamic"
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name is required"),

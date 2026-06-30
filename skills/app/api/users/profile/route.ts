@@ -4,6 +4,7 @@ import { users } from "../../../../db/schema"
 import { eq } from "drizzle-orm"
 import { verifyToken } from "../../../../lib/auth"
 import { z } from "zod"
+export const dynamic = "force-dynamic"
 
 const profileSchema = z.object({
   fullName: z.string().min(2, "Name is required").optional(),

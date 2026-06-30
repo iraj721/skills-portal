@@ -4,6 +4,7 @@ import { extractYouTubeVideoId, getYouTubeVideoInfo } from "../../../lib/youtube
 import { verifyToken } from "../../../lib/auth"
 import { randomUUID } from "crypto"
 import { rateLimit } from "../../../lib/rate-limit"
+export const dynamic = "force-dynamic"
 
 const ALLOWED_IMAGE_TYPES = ["image/jpeg", "image/png", "image/webp", "image/jpg"]
 const ALLOWED_VIDEO_TYPES = ["video/mp4", "video/webm", "video/quicktime", "video/mov"]

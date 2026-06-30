@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server"
 import { db } from "../../../db"
 import { courses, enrollments } from "../../../db/schema"
 import { eq, sql, and } from "drizzle-orm"
+export const dynamic = "force-dynamic"
 
 export async function GET(request: NextRequest) {
   try {

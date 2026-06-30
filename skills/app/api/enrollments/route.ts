@@ -4,6 +4,7 @@ import { enrollments, courses, categories, batches, batchCourses } from "../../.
 import { eq, and, sql } from "drizzle-orm"
 import { verifyToken } from "../../../lib/auth"
 import { z } from "zod"
+export const dynamic = "force-dynamic"
 
 const enrollmentSchema = z.object({
   courseId: z.string().uuid("Invalid course ID"),
